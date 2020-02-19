@@ -96,10 +96,8 @@ var mouseDown=false;
 $(document).ready(function(){
   $('.pixelGrilla').mousedown(function(){
     mouseDown=true;
-    console.log('mousedown');
   }).mouseup(function(){
     mouseDown=false;
-    console.log('mouseUp');
   });
 });
 
@@ -107,7 +105,6 @@ $(document).ready(function(){
   $(document).ready(function(){
     $('.pixelGrilla').mouseover(function(){
       if (mouseDown===true) { 
-        console.log('mouseover')
       var $indicadorDeColor= $('#indicador-de-color').css('background-color');
       $(this).css("background-color", $indicadorDeColor);
       }
